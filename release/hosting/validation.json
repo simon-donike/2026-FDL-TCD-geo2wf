@@ -1,0 +1,533 @@
+[
+  {
+    "experiment": "architecture-with-era5-correction",
+    "split": "test",
+    "source_rows": 212,
+    "effective_rows": 212,
+    "exact_sample_comparisons": 212,
+    "comparison_signature": "729597c9d52d2af5f5f7fb6bc77580cacc5e8d58c13b170ae18256ac45b6a33c",
+    "storms": 38
+  },
+  {
+    "experiment": "architecture-with-era5-correction",
+    "split": "train",
+    "source_rows": 842,
+    "effective_rows": 842,
+    "exact_sample_comparisons": 842,
+    "comparison_signature": "4f39fed2bcffcdef6f3e8646951572549e586040024930d5d2d5ac168ca932c2",
+    "storms": 115
+  },
+  {
+    "experiment": "architecture-with-era5-correction",
+    "split": "validation",
+    "source_rows": 232,
+    "effective_rows": 232,
+    "exact_sample_comparisons": 232,
+    "comparison_signature": "5c11c562b914a601cc994661cec25428aa0950da724bc5619cb33f044f7dec25",
+    "storms": 34
+  },
+  {
+    "experiment": "architecture-with-era5-joint",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 212,
+    "exact_sample_comparisons": 212,
+    "comparison_signature": "fc7700e7f0112509928cc781693adcd1da94044785af97f202136712af181e7b",
+    "storms": 38
+  },
+  {
+    "experiment": "architecture-with-era5-joint",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 841,
+    "exact_sample_comparisons": 841,
+    "comparison_signature": "8178256f7200fd8e454416f07a02ed33d0a98b48c6f34932743245061207b62d",
+    "storms": 115
+  },
+  {
+    "experiment": "architecture-with-era5-joint",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 232,
+    "exact_sample_comparisons": 232,
+    "comparison_signature": "360d4261b97d29c3c245457b373558037a20140d5df0b9d67a6acbb7edb33fe5",
+    "storms": 34
+  },
+  {
+    "experiment": "architecture-with-era5-unet",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 212,
+    "exact_sample_comparisons": 212,
+    "comparison_signature": "fc7700e7f0112509928cc781693adcd1da94044785af97f202136712af181e7b",
+    "storms": 38
+  },
+  {
+    "experiment": "architecture-with-era5-unet",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 841,
+    "exact_sample_comparisons": 841,
+    "comparison_signature": "8178256f7200fd8e454416f07a02ed33d0a98b48c6f34932743245061207b62d",
+    "storms": 115
+  },
+  {
+    "experiment": "architecture-with-era5-unet",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 232,
+    "exact_sample_comparisons": 232,
+    "comparison_signature": "360d4261b97d29c3c245457b373558037a20140d5df0b9d67a6acbb7edb33fe5",
+    "storms": 34
+  },
+  {
+    "experiment": "architecture-without-era5-correction",
+    "split": "test",
+    "source_rows": 212,
+    "effective_rows": 212,
+    "exact_sample_comparisons": 212,
+    "comparison_signature": "14a8b6f1deac14cc2dfd38bdb6749412826b7661070ea0074530ad054d86b50f",
+    "storms": 38
+  },
+  {
+    "experiment": "architecture-without-era5-correction",
+    "split": "train",
+    "source_rows": 842,
+    "effective_rows": 842,
+    "exact_sample_comparisons": 842,
+    "comparison_signature": "966da414dd1ecd507b57416b69115324711e526337d26a33a9ad4832ec67a28a",
+    "storms": 115
+  },
+  {
+    "experiment": "architecture-without-era5-correction",
+    "split": "validation",
+    "source_rows": 232,
+    "effective_rows": 232,
+    "exact_sample_comparisons": 232,
+    "comparison_signature": "a3be8d31c3cfa93fe2142eed4196d81ec393b1041fd01fb58e1471ca54b12404",
+    "storms": 34
+  },
+  {
+    "experiment": "architecture-without-era5-joint",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 212,
+    "exact_sample_comparisons": 212,
+    "comparison_signature": "da4bffc1cabe8c647ba712ba00ad9faa4521ccfd92268703ed677720c0b7de4c",
+    "storms": 38
+  },
+  {
+    "experiment": "architecture-without-era5-joint",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 841,
+    "exact_sample_comparisons": 841,
+    "comparison_signature": "edcc6103f7be7577980a6712fcc3294cab2019b6a51ccc62eb23e776395ae101",
+    "storms": 115
+  },
+  {
+    "experiment": "architecture-without-era5-joint",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 232,
+    "exact_sample_comparisons": 232,
+    "comparison_signature": "f6fb0e52f2423ef9a43e81d933a2ab0004bb7cb0c3948e79bfb672f4b6f0e9e5",
+    "storms": 34
+  },
+  {
+    "experiment": "architecture-without-era5-unet",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 212,
+    "exact_sample_comparisons": 212,
+    "comparison_signature": "da4bffc1cabe8c647ba712ba00ad9faa4521ccfd92268703ed677720c0b7de4c",
+    "storms": 38
+  },
+  {
+    "experiment": "architecture-without-era5-unet",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 841,
+    "exact_sample_comparisons": 841,
+    "comparison_signature": "edcc6103f7be7577980a6712fcc3294cab2019b6a51ccc62eb23e776395ae101",
+    "storms": 115
+  },
+  {
+    "experiment": "architecture-without-era5-unet",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 232,
+    "exact_sample_comparisons": 232,
+    "comparison_signature": "f6fb0e52f2423ef9a43e81d933a2ab0004bb7cb0c3948e79bfb672f4b6f0e9e5",
+    "storms": 34
+  },
+  {
+    "experiment": "correction_image_radii",
+    "split": "test",
+    "source_rows": 139,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "fd060ef68091fd0dfae1a906c1fd5c984524adb08c6f50727e55c0e064c3c728",
+    "storms": 33
+  },
+  {
+    "experiment": "correction_image_radii",
+    "split": "train",
+    "source_rows": 568,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "011d76a29cf44314d87675dc899774f12c58373abe97ed5c63f9694fc294f229",
+    "storms": 109
+  },
+  {
+    "experiment": "correction_image_radii",
+    "split": "validation",
+    "source_rows": 159,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "00ccae88180a498fd3370f06ea55757578005de0b77f94bd6c4f38d33e9cfb4c",
+    "storms": 33
+  },
+  {
+    "experiment": "correction_mlp_radii",
+    "split": "test",
+    "source_rows": 139,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "fd060ef68091fd0dfae1a906c1fd5c984524adb08c6f50727e55c0e064c3c728",
+    "storms": 33
+  },
+  {
+    "experiment": "correction_mlp_radii",
+    "split": "train",
+    "source_rows": 568,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "011d76a29cf44314d87675dc899774f12c58373abe97ed5c63f9694fc294f229",
+    "storms": 109
+  },
+  {
+    "experiment": "correction_mlp_radii",
+    "split": "validation",
+    "source_rows": 159,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "00ccae88180a498fd3370f06ea55757578005de0b77f94bd6c4f38d33e9cfb4c",
+    "storms": 33
+  },
+  {
+    "experiment": "dashboard-correction",
+    "split": "test",
+    "source_rows": 65,
+    "effective_rows": 65,
+    "exact_sample_comparisons": 65,
+    "comparison_signature": "58d9779b0da506e5730eb75941425e3a4d3b0f40955912fbc4291f9fbca4a8cd",
+    "storms": 20
+  },
+  {
+    "experiment": "dashboard-correction",
+    "split": "train",
+    "source_rows": 261,
+    "effective_rows": 261,
+    "exact_sample_comparisons": 261,
+    "comparison_signature": "63cad348db6bb747c5f806defe64b4cd5aacb0ea32746c2fdfb58780ea56f1c0",
+    "storms": 70
+  },
+  {
+    "experiment": "dashboard-correction",
+    "split": "validation",
+    "source_rows": 98,
+    "effective_rows": 98,
+    "exact_sample_comparisons": 98,
+    "comparison_signature": "33024afdee3e4c335ff19fe9b6cccdc429c61ab942005a2f6cbfce8544afb7cb",
+    "storms": 24
+  },
+  {
+    "experiment": "dashboard-mlp",
+    "split": "pretrain_train",
+    "source_rows": 73522,
+    "effective_rows": 73522,
+    "exact_sample_comparisons": 73522,
+    "comparison_signature": "abb7c7d57313c0f309b62d5a38dc19fdb9b20cd8b5df16c73c2f84a2da885646",
+    "storms": 1783
+  },
+  {
+    "experiment": "dashboard-mlp",
+    "split": "pretrain_val",
+    "source_rows": 15289,
+    "effective_rows": 15289,
+    "exact_sample_comparisons": 15289,
+    "comparison_signature": "6f23e726c149d0e4b0fb8a5e52b4b4c32ad16c387d4bbde7578583d0cfc710ab",
+    "storms": 405
+  },
+  {
+    "experiment": "latent_no_sar_era5_max_wind",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "16bc35bf0eab0ef1dc50336d22492249deec9bfc0e6e8ec8c4de7c1bb7eeba87",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_no_sar_era5_max_wind",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "66e3d793c2d99e3ffd0d9a7ececa94200426fa4f9e2d5aefef02aede6f9feee3",
+    "storms": 109
+  },
+  {
+    "experiment": "latent_no_sar_era5_max_wind",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "daba2850a95dae09741fae8f886e1a5c5d3ca60211d8a435ae09975966c64565",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_no_sar_era5_max_wind_radii",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "16bc35bf0eab0ef1dc50336d22492249deec9bfc0e6e8ec8c4de7c1bb7eeba87",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_no_sar_era5_max_wind_radii",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "66e3d793c2d99e3ffd0d9a7ececa94200426fa4f9e2d5aefef02aede6f9feee3",
+    "storms": 109
+  },
+  {
+    "experiment": "latent_no_sar_era5_max_wind_radii",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "daba2850a95dae09741fae8f886e1a5c5d3ca60211d8a435ae09975966c64565",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_no_sar_no_era5_max_wind",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "a450d81d894be75d44f686a96d442c41f8c1592c02f887531ad1ffb2a47d4ca2",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_no_sar_no_era5_max_wind",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "bce77407163420ab62874fa73171bf91493e6e40d3f3f402c73b7042ae0fe0f9",
+    "storms": 109
+  },
+  {
+    "experiment": "latent_no_sar_no_era5_max_wind",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "e45fb4bca97852bbde6a3e406d11e269dbb1e7ef9a40f255d3a28546666f4760",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_no_sar_no_era5_max_wind_radii",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "a450d81d894be75d44f686a96d442c41f8c1592c02f887531ad1ffb2a47d4ca2",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_no_sar_no_era5_max_wind_radii",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "bce77407163420ab62874fa73171bf91493e6e40d3f3f402c73b7042ae0fe0f9",
+    "storms": 109
+  },
+  {
+    "experiment": "latent_no_sar_no_era5_max_wind_radii",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "e45fb4bca97852bbde6a3e406d11e269dbb1e7ef9a40f255d3a28546666f4760",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_sar_era5_max_wind",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "7c590fe380d0cc2b15961fb64a6ade448cec6f8227f5f16396377e51b8ec823c",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_sar_era5_max_wind",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "7829dc68fc7beac3820559f5123097713d466c7c6a33c01d2279553a4f714575",
+    "storms": 109
+  },
+  {
+    "experiment": "latent_sar_era5_max_wind",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "8ec6df13db2a1789aac9b1dcc753967a2d43db8a57ed4dcd23ed90f728acf6d4",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_sar_era5_max_wind_radii",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "7c590fe380d0cc2b15961fb64a6ade448cec6f8227f5f16396377e51b8ec823c",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_sar_era5_max_wind_radii",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "7829dc68fc7beac3820559f5123097713d466c7c6a33c01d2279553a4f714575",
+    "storms": 109
+  },
+  {
+    "experiment": "latent_sar_era5_max_wind_radii",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "8ec6df13db2a1789aac9b1dcc753967a2d43db8a57ed4dcd23ed90f728acf6d4",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_sar_no_era5_max_wind",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "4cde54fed187c70d961675c4140e847f3e941d502b4d418cf8dbcbce8e24b2a7",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_sar_no_era5_max_wind",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "3c49ecd280c141ff7419d190a058261c5e29db22034df79a6b0980f5c17e7999",
+    "storms": 109
+  },
+  {
+    "experiment": "latent_sar_no_era5_max_wind",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "590fc3ed59987e6dc843c88de7bf4fdfe4b00fef4e8dec7c1970bf38c3d8aedd",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_sar_no_era5_max_wind_radii",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 139,
+    "exact_sample_comparisons": 139,
+    "comparison_signature": "4cde54fed187c70d961675c4140e847f3e941d502b4d418cf8dbcbce8e24b2a7",
+    "storms": 33
+  },
+  {
+    "experiment": "latent_sar_no_era5_max_wind_radii",
+    "split": "train",
+    "source_rows": 1238,
+    "effective_rows": 568,
+    "exact_sample_comparisons": 568,
+    "comparison_signature": "3c49ecd280c141ff7419d190a058261c5e29db22034df79a6b0980f5c17e7999",
+    "storms": 109
+  },
+  {
+    "experiment": "latent_sar_no_era5_max_wind_radii",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 159,
+    "exact_sample_comparisons": 159,
+    "comparison_signature": "590fc3ed59987e6dc843c88de7bf4fdfe4b00fef4e8dec7c1970bf38c3d8aedd",
+    "storms": 33
+  },
+  {
+    "experiment": "structure-cache-field",
+    "split": "test",
+    "source_rows": 302,
+    "effective_rows": 212,
+    "exact_sample_comparisons": 212,
+    "comparison_signature": "2418d3253972e043ca2bf460a4e228dc895cbe1d6842611a54dedcc01c907df1",
+    "storms": 38
+  },
+  {
+    "experiment": "structure-cache-field",
+    "split": "train_geostat_nopmw",
+    "source_rows": 1237,
+    "effective_rows": 842,
+    "exact_sample_comparisons": 842,
+    "comparison_signature": "b38485f94d82d52306e33a11b1bbd8408eb924b0c0dd5e9e6b41b85a9a6d0dd5",
+    "storms": 115
+  },
+  {
+    "experiment": "structure-cache-field",
+    "split": "validation",
+    "source_rows": 332,
+    "effective_rows": 234,
+    "exact_sample_comparisons": 234,
+    "comparison_signature": "d1e02eb2bc5e1a730e189076541aa56507e88989ab868639a6890edd368ce0f4",
+    "storms": 34
+  },
+  {
+    "experiment": "training-input-79a823ce5e09",
+    "split": "test",
+    "source_rows": 195,
+    "effective_rows": 191,
+    "exact_sample_comparisons": 191,
+    "comparison_signature": "20b9d4e026d09aef810922df0ec260cccf4a426fc69c7ded81287ad32d0d3675",
+    "storms": 33
+  },
+  {
+    "experiment": "training-input-79a823ce5e09",
+    "split": "train",
+    "source_rows": 798,
+    "effective_rows": 778,
+    "exact_sample_comparisons": 778,
+    "comparison_signature": "71ece636ceae95017277609a9ec84968df1e1f288d19a893e385ae668ca73794",
+    "storms": 109
+  },
+  {
+    "experiment": "training-input-79a823ce5e09",
+    "split": "validation",
+    "source_rows": 212,
+    "effective_rows": 204,
+    "exact_sample_comparisons": 204,
+    "comparison_signature": "b484475ee69f0ee7309758e5454a9b435842eebd91f1c34ff2c69d645140e573",
+    "storms": 31
+  }
+]

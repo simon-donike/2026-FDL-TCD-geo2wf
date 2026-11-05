@@ -1,0 +1,9 @@
+wandb:
+  enabled: true
+  entity: simon-donike
+  project: geo2wf
+  name: null
+  group: null
+  job_type: training
+  tags: []
+  log_model: false

@@ -1,0 +1,11 @@
+{
+  "source": "/work/code/geo2wf/data/unet_intensity_structure_v3",
+  "size": 216535040,
+  "md5": "f6ce5f972756058e47e5b264c2c544fa",
+  "remote": "gdrive:hyperalisserver/work/code/geo2wf/data/unet_intensity_structure_v3.20261017.tar",
+  "id": "1x7rFPaTguSamACKJthlvpWakIGnN5duC",
+  "remote_verified": true,
+  "local_deleted": true,
+  "local_source_removed": true,
+  "restore_command": "rclone copyto 'gdrive:hyperalisserver/work/code/geo2wf/data/unet_intensity_structure_v3.20261017.tar' '/tmp/unet_intensity_structure_v3.20261017.tar' && tar -xf '/tmp/unet_intensity_structure_v3.20261017.tar' -C '/work/code/geo2wf/data'"
+}

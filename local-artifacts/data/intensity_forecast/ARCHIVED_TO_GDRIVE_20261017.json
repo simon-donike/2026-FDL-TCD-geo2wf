@@ -1,0 +1,11 @@
+{
+  "source": "/work/code/geo2wf/data/intensity_forecast",
+  "size": 29521920,
+  "md5": "063da3b124effc84ffb8e2fa808c4ca5",
+  "remote": "gdrive:hyperalisserver/work/code/geo2wf/data/intensity_forecast.20261017.tar",
+  "id": "1-viHm6n_fIWn36kOtE7JsdQ1DUMwOQK5",
+  "remote_verified": true,
+  "local_deleted": true,
+  "local_source_removed": true,
+  "restore_command": "rclone copyto 'gdrive:hyperalisserver/work/code/geo2wf/data/intensity_forecast.20261017.tar' '/tmp/intensity_forecast.20261017.tar' && tar -xf '/tmp/intensity_forecast.20261017.tar' -C '/work/code/geo2wf/data'"
+}

@@ -1,0 +1,11 @@
+{
+  "source": "/work/code/geo2wf/data/unet_intensity_geostat_nopmw_v2",
+  "size": 103976960,
+  "md5": "e012a9b7d74e8fc30ad8592539c3ee29",
+  "remote": "gdrive:hyperalisserver/work/code/geo2wf/data/unet_intensity_geostat_nopmw_v2.20261017.tar",
+  "id": "1biuvLQJ4swk0kKAyqW3xvo4wvEIe3O36",
+  "remote_verified": true,
+  "local_deleted": true,
+  "local_source_removed": true,
+  "restore_command": "rclone copyto 'gdrive:hyperalisserver/work/code/geo2wf/data/unet_intensity_geostat_nopmw_v2.20261017.tar' '/tmp/unet_intensity_geostat_nopmw_v2.20261017.tar' && tar -xf '/tmp/unet_intensity_geostat_nopmw_v2.20261017.tar' -C '/work/code/geo2wf/data'"
+}

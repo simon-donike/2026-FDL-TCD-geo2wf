@@ -1,0 +1,6 @@
+{
+  "source": "/work/code/geo2wf/data/historical_storms_v1",
+  "archive": "/data2/archive-staging/project-offload-20261017/geo2wf/006/historical_storms_v1.20261017.tar",
+  "md5": "152ab34a5d6b4fc30d3d323fe3bb49ca",
+  "remote_parent": "gdrive:hyperalisserver/work/code/geo2wf/data"
+}

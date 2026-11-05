@@ -1,0 +1,17 @@
+{
+  "date_utc": "2026-11-05",
+  "scientific_tests": {
+    "passed": 236,
+    "skipped": 1,
+    "skip_reason": "Pinned checkpoint unavailable locally",
+    "command": "python -m pytest -q tests --disable-warnings"
+  },
+  "publication_tables": "Both publication tables verified at their published precision.",
+  "publication_figures": "Storm metrics reproduced from native saved observations; three figure families rendered.",
+  "dependency_lock": "uv lock --check passed",
+  "not_run": [
+    "Full external-checkpoint reevaluation",
+    "Full-data retraining"
+  ],
+  "note": "Historical release/validation.json remains the original publication validation record."
+}

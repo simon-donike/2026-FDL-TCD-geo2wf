@@ -1,0 +1,65 @@
+# Published dataset cohorts
+
+Generated from the effective catalog cohorts. Source manifests and filtered memberships are both published. Counts below describe individual splits; training-membership indexes additionally record historical test reuse where configured.
+
+| Experiment | Split | Samples | Storms |
+|---|---|---:|---:|
+| architecture-with-era5-correction | test | 212 | 38 |
+| architecture-with-era5-correction | train | 842 | 115 |
+| architecture-with-era5-correction | validation | 232 | 34 |
+| architecture-with-era5-joint | test | 212 | 38 |
+| architecture-with-era5-joint | train | 841 | 115 |
+| architecture-with-era5-joint | validation | 232 | 34 |
+| architecture-with-era5-unet | test | 212 | 38 |
+| architecture-with-era5-unet | train | 841 | 115 |
+| architecture-with-era5-unet | validation | 232 | 34 |
+| architecture-without-era5-correction | test | 212 | 38 |
+| architecture-without-era5-correction | train | 842 | 115 |
+| architecture-without-era5-correction | validation | 232 | 34 |
+| architecture-without-era5-joint | test | 212 | 38 |
+| architecture-without-era5-joint | train | 841 | 115 |
+| architecture-without-era5-joint | validation | 232 | 34 |
+| architecture-without-era5-unet | test | 212 | 38 |
+| architecture-without-era5-unet | train | 841 | 115 |
+| architecture-without-era5-unet | validation | 232 | 34 |
+| correction_image_radii | test | 139 | 33 |
+| correction_image_radii | train | 568 | 109 |
+| correction_image_radii | validation | 159 | 33 |
+| correction_mlp_radii | test | 139 | 33 |
+| correction_mlp_radii | train | 568 | 109 |
+| correction_mlp_radii | validation | 159 | 33 |
+| dashboard-correction | test | 65 | 20 |
+| dashboard-correction | train | 261 | 70 |
+| dashboard-correction | validation | 98 | 24 |
+| dashboard-mlp | pretrain_train | 73522 | 1783 |
+| dashboard-mlp | pretrain_val | 15289 | 405 |
+| latent_no_sar_era5_max_wind | test | 139 | 33 |
+| latent_no_sar_era5_max_wind | train | 568 | 109 |
+| latent_no_sar_era5_max_wind | validation | 159 | 33 |
+| latent_no_sar_era5_max_wind_radii | test | 139 | 33 |
+| latent_no_sar_era5_max_wind_radii | train | 568 | 109 |
+| latent_no_sar_era5_max_wind_radii | validation | 159 | 33 |
+| latent_no_sar_no_era5_max_wind | test | 139 | 33 |
+| latent_no_sar_no_era5_max_wind | train | 568 | 109 |
+| latent_no_sar_no_era5_max_wind | validation | 159 | 33 |
+| latent_no_sar_no_era5_max_wind_radii | test | 139 | 33 |
+| latent_no_sar_no_era5_max_wind_radii | train | 568 | 109 |
+| latent_no_sar_no_era5_max_wind_radii | validation | 159 | 33 |
+| latent_sar_era5_max_wind | test | 139 | 33 |
+| latent_sar_era5_max_wind | train | 568 | 109 |
+| latent_sar_era5_max_wind | validation | 159 | 33 |
+| latent_sar_era5_max_wind_radii | test | 139 | 33 |
+| latent_sar_era5_max_wind_radii | train | 568 | 109 |
+| latent_sar_era5_max_wind_radii | validation | 159 | 33 |
+| latent_sar_no_era5_max_wind | test | 139 | 33 |
+| latent_sar_no_era5_max_wind | train | 568 | 109 |
+| latent_sar_no_era5_max_wind | validation | 159 | 33 |
+| latent_sar_no_era5_max_wind_radii | test | 139 | 33 |
+| latent_sar_no_era5_max_wind_radii | train | 568 | 109 |
+| latent_sar_no_era5_max_wind_radii | validation | 159 | 33 |
+| structure-cache-field | test | 212 | 38 |
+| structure-cache-field | train_geostat_nopmw | 842 | 115 |
+| structure-cache-field | validation | 234 | 34 |
+| training-input-79a823ce5e09 | test | 191 | 33 |
+| training-input-79a823ce5e09 | train | 778 | 109 |
+| training-input-79a823ce5e09 | validation | 204 | 31 |

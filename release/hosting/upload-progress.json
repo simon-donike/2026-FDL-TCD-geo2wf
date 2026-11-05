@@ -1,0 +1,10 @@
+{
+  "dataset": {
+    "repo_id": "simon-donike/geo2wf-data",
+    "revision": "043c7f23e5f0a1fbda7034c342113664fb6aa81e"
+  },
+  "model": {
+    "repo_id": "simon-donike/geo2wf-models",
+    "revision": "b4399d426b80698d4cf73a77c9541071a8ab3d42"
+  }
+}

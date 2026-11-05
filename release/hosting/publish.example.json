@@ -1,0 +1,8 @@
+{
+  "dataset_repo": "YOUR-ORG/stormsense-data",
+  "model_repo": "YOUR-ORG/stormsense-models",
+  "dataset_license": "REPLACE-WITH-AGREED-LICENSE",
+  "model_license": "REPLACE-WITH-AGREED-LICENSE",
+  "attribution": "REPLACE-WITH-AUTHORS-AND-SOURCE-ATTRIBUTIONS",
+  "private": false
+}

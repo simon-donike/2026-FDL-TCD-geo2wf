@@ -1,0 +1,765 @@
+{
+  "schema_version": 1,
+  "extracted_at_utc": "2026-11-05",
+  "source_repository": "https://github.com/simon-donike/geo2wf",
+  "main_commit": "4759bd0d5bd5915730ee64676c3f27e510f3ed0e",
+  "conference_commit": "d8b01875f4ba6de6aeddae67aaa6882aa5c0ebb7",
+  "conference_worktree_changes_included": [
+    {
+      "path": ".gitignore",
+      "git_status": " M",
+      "sha256": "f63b6a4eddcaef5cbb894fcbfac023146e9f76c5a3b01089e3b0d4e02650476b"
+    },
+    {
+      "path": "README.md",
+      "git_status": " M",
+      "sha256": "22b4e3d1e9e6e5d489395806ff707b4815a456d2697fb9df9bd1e2acab4060d3"
+    },
+    {
+      "path": "docs/data/full-dataset.md",
+      "git_status": " M",
+      "sha256": "c3558287867c204668224c83b3e56c8c4017f9b50df252651856efc5d6be6cf6"
+    },
+    {
+      "path": "docs/reproduction.md",
+      "git_status": " M",
+      "sha256": "9cb3892124bed8448c2c156b4fd087ee1fee09d7c8b2a95023e699e18855a639"
+    },
+    {
+      "path": "mkdocs.yml",
+      "git_status": " M",
+      "sha256": "14d4dc3e763a13bedb7e930403f304970f7f118aae95db0361d7aa430f670104"
+    },
+    {
+      "path": "pyproject.toml",
+      "git_status": " M",
+      "sha256": "12adad35d00b8737e93bd5448782196c060de9ac59745ea3b9d3cf3c97e89260"
+    },
+    {
+      "path": "release/README.md",
+      "git_status": " M",
+      "sha256": "c16a818ce31dcce857325de2a556139ee7ca97a183f42960a2b86e57aaafebe9"
+    },
+    {
+      "path": "scripts/conference_release.py",
+      "git_status": " M",
+      "sha256": "0f39fdc17df5651090820242f21502bef520b5c3ee064dbcab6c53afa861977c"
+    },
+    {
+      "path": "scripts/export_storm_explorer_data.py",
+      "git_status": " M",
+      "sha256": "104ffbf95b7ad41498fc2f09ea3a912ddf1fcfaaa1d3285da79e44f73a38b229"
+    },
+    {
+      "path": "src/geo2wf/data/datasets/paired_geotiff.py",
+      "git_status": " M",
+      "sha256": "676145de1079a485fd6df51ffac5a37b1c10458ae890c95f4b0e906c6825ce47"
+    },
+    {
+      "path": "src/geo2wf/data/intensity.py",
+      "git_status": " M",
+      "sha256": "7307129a2886c6ed71e30a0c8df71fb4a4bcddd2baba153838a02be6d64a594d"
+    },
+    {
+      "path": "src/geo2wf/data/intensity_forecast.py",
+      "git_status": " M",
+      "sha256": "f2ac60baab3a3424c8570077c2670727c03f0a771d74f66e01b77c3118fdf584"
+    },
+    {
+      "path": "tests/test_storm_explorer_csv.py",
+      "git_status": " M",
+      "sha256": "021208ad4f56722db16306b9f9fc08d9fe19d73f19c6e17406225a1d6da54dee"
+    },
+    {
+      "path": "tests/test_storm_explorer_pmw.py",
+      "git_status": " M",
+      "sha256": "625490bb463d19c14f5cdad2b173fd1f7895aec08864d24280471190802257c5"
+    },
+    {
+      "path": "uv.lock",
+      "git_status": " M",
+      "sha256": "261ce1fd85232b2241a84d4657f3c1571f62086a417fac8e5ec2d994400bb6ab"
+    },
+    {
+      "path": "docs/data/huggingface.md",
+      "git_status": "??",
+      "sha256": "592a80accfff73208bfd975545bbaf825fce5083509a3cd4b86dbd46e5ba4851"
+    },
+    {
+      "path": "docs/data/published-cohorts.md",
+      "git_status": "??",
+      "sha256": "055505c4815406438763f4955a90dbd3b7a1b264475337a3ae9d8bed2a66f2b7"
+    },
+    {
+      "path": "scripts/enrich_catalog_index.py",
+      "git_status": "??",
+      "sha256": "73a97c6224bb5987c1c9521990d218536027a17f34080f221002ef26e0eb3ca7"
+    },
+    {
+      "path": "scripts/release_hub.py",
+      "git_status": "??",
+      "sha256": "0965944025145b4ff11b3ed36324c0d20cee21254eec52c7dcc70c893ef6ddc0"
+    },
+    {
+      "path": "scripts/validate_catalog_loaders.py",
+      "git_status": "??",
+      "sha256": "633d8e7a000520138faa7338db84c8630abdc74c56bbb3e055fb1e9a110aa0bb"
+    },
+    {
+      "path": "src/geo2wf/data/catalog.py",
+      "git_status": "??",
+      "sha256": "4f97f1ad72039422a4c28bd03b5785a054e8216d8cd4caaff5d86711e050645a"
+    },
+    {
+      "path": "tests/test_scientific_catalog.py",
+      "git_status": "??",
+      "sha256": "1dad15a0d935fc0b5dbce1669e71f63efdfe80077aa2f95d88142c3ff15d07fa"
+    }
+  ],
+  "main_scientific_source_inputs": [
+    {
+      "path": ".local.example.env",
+      "sha256": "9253c59328a0e2f4db2ee788c6774b3fa238512623da76931c2e5ad339635ce1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "81e022d3ad5cfcb98d4edfaa286f3ba8766cf7a7c26df94d51b5d30529c4b3a5"
+    },
+    {
+      "path": "configs/config.yaml",
+      "sha256": "fae7d348b4f283654f02d4b6cee8fa8b27fb7a38789fd6dca87777fa6564064d"
+    },
+    {
+      "path": "configs/data/encoder_geo_ibtracs.yaml",
+      "sha256": "a34a8081df7f813b022f7ec197816d2fa96c659f7e3733cca7c22302ce076de1"
+    },
+    {
+      "path": "configs/data/geo_sar_common10_era5.yaml",
+      "sha256": "319f0ec22820885bb8a70f84725a84c113229c1351b592a71aa500a45eb6f392"
+    },
+    {
+      "path": "configs/data/intensity_forecast_pretrain.yaml",
+      "sha256": "3a9a729224e3c78ccfe90cc880b05303abe175bedf3cdec7631bbb962525ca96"
+    },
+    {
+      "path": "configs/data/joint_geo_sar_ibtracs.yaml",
+      "sha256": "0d3266e4389fd1f05c7af2425d29ff32c586ede0db19968b3c687813b59810d3"
+    },
+    {
+      "path": "configs/data/unet_intensity_single.yaml",
+      "sha256": "3bf13976dbe3cdaaab2173f09161b59300f28732c3993f2c6a6918b693ef9cad"
+    },
+    {
+      "path": "configs/data/unet_intensity_structure.yaml",
+      "sha256": "0fc6e4293ea13d3b451bb70c071d588dd602cd59fa0806385c42c20fd5c3316c"
+    },
+    {
+      "path": "configs/experiment/bottleneck_unet_mlp.yaml",
+      "sha256": "21aa70af5c67c03154e221fae8d615ac215e4903d9c7de33b523d9bcc11e6187"
+    },
+    {
+      "path": "configs/experiment/bottleneck_unet_mlp_no_era5.yaml",
+      "sha256": "cf0d71807a6f5ff564008955fcab88c169155d24a4d147e0cd10035485c0d068"
+    },
+    {
+      "path": "configs/experiment/intensity_comparison_unet.yaml",
+      "sha256": "a859696989be2dbc9001f9a4c51f3ad0b5c3573982656b6a9cdf872a8917d7cd"
+    },
+    {
+      "path": "configs/experiment/intensity_comparison_unet_no_era5.yaml",
+      "sha256": "bb5dcd80c61a9a357140fd6b09262da6f4bf1fd7e6b4882a4deac24be444247d"
+    },
+    {
+      "path": "configs/experiment/intensity_forecast_pretrain.yaml",
+      "sha256": "8026242f8643396e4142abf04faadbb7cb1fc5c19f61a667f5ff3d56791623de"
+    },
+    {
+      "path": "configs/experiment/latent_mlp_no_sar_era5_max_wind.yaml",
+      "sha256": "a75a6c500201cac2a9bca146d2f9a4fdcefd50ae4a6b620ca5d8bd7c974769d7"
+    },
+    {
+      "path": "configs/experiment/latent_mlp_no_sar_era5_max_wind_radii.yaml",
+      "sha256": "e8db234eb7ed2d013b63d13d17d42cfa9bcce482d75be2d62afc2d85c83ef162"
+    },
+    {
+      "path": "configs/experiment/latent_mlp_no_sar_no_era5_max_wind.yaml",
+      "sha256": "5f0ea165936311b138ffd9cc8da371b543d063728c4a470dee87b3f8f4595b7e"
+    },
+    {
+      "path": "configs/experiment/latent_mlp_no_sar_no_era5_max_wind_radii.yaml",
+      "sha256": "9e9fe163368e487afd793b8de36dd3b5ead81df62d50aae346c25bfddba7c2ec"
+    },
+    {
+      "path": "configs/experiment/latent_mlp_sar_era5_max_wind.yaml",
+      "sha256": "7852f3f001cd9ceeccb33f78473b76f23de0f598050e2996a549dc6d2f606964"
+    },
+    {
+      "path": "configs/experiment/latent_mlp_sar_era5_max_wind_radii.yaml",
+      "sha256": "4576b1808dcc1e6f19c2cafb3c1575323157e377d968aed75c83ba8134d60f36"
+    },
+    {
+      "path": "configs/experiment/latent_mlp_sar_no_era5_max_wind.yaml",
+      "sha256": "0bfc483dfac3cbaf9cf6b29e974391af401f69616285bbed88ff938fde9ef6d7"
+    },
+    {
+      "path": "configs/experiment/latent_mlp_sar_no_era5_max_wind_radii.yaml",
+      "sha256": "bab9af536f91fe8a8039a30dea495dba83dd9e193b4553e38804ead73b2258a6"
+    },
+    {
+      "path": "configs/experiment/unet_intensity_correction.yaml",
+      "sha256": "3fd55a68f6ffddda592985a718226d5e6b6c9350a578ec010fb4a5386160007d"
+    },
+    {
+      "path": "configs/experiment/unet_intensity_correction_image_radii.yaml",
+      "sha256": "000e65e32883a2d3bef466a752aeef79982f7bdff265f47d3b17ca5c4696bbb9"
+    },
+    {
+      "path": "configs/experiment/unet_intensity_correction_mlp_radii.yaml",
+      "sha256": "1b26a8d6f63be29e9ca422c5c9390e9d9f022fa37cde005c186d7e3d2b41d658"
+    },
+    {
+      "path": "configs/export/geo_sar_common10_era5.yaml",
+      "sha256": "8f79d3637f2e7cf8d260412eeafc1237474cbaa62dbb1f071d5a910568a9f4bf"
+    },
+    {
+      "path": "configs/logging/default.yaml",
+      "sha256": "f74e89c9d46eea3b8d6716a7be63efd8cb3272ac16099d888ec4a38809decd65"
+    },
+    {
+      "path": "configs/model/bottleneck_encoder_mlp.yaml",
+      "sha256": "eeae8c1635dbafa230f9d0fcc3e539ae114c0452e228d17e817930a78204efdc"
+    },
+    {
+      "path": "configs/model/bottleneck_unet_mlp.yaml",
+      "sha256": "6328e910038bedbe7610ec92ee18c595bd64249ac6118f1ecede87b141f9af48"
+    },
+    {
+      "path": "configs/model/deterministic_residual.yaml",
+      "sha256": "723e88141cc3551779eec6322b54d8536f1a58775ef8a4625aec38e873f67260"
+    },
+    {
+      "path": "configs/model/intensity_correction.yaml",
+      "sha256": "ef81774fa45fd508d924f23e07bca9c219d3fb3a84a679c659266a5deec5075e"
+    },
+    {
+      "path": "configs/model/intensity_forecast.yaml",
+      "sha256": "9cdd7874823ab75d918b74e6f410b537852ac74890bb713aec3707fcf1a2a490"
+    },
+    {
+      "path": "configs/modular.yaml",
+      "sha256": "aa36a8a89574436b54890545d7040558f1f10d889a5c12c743f9032fc3ee26d1"
+    },
+    {
+      "path": "configs/trainer/default.yaml",
+      "sha256": "1d219cc7973851f69e02b37af0f171c225a43105b0d516d938bc972b195edb5d"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "b7f77733521d9fb1d94514cf94d3cb31c93f6fb8a0fa555df4f578dbb798e33c"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "c65ad4371191febcf7dc3801d40d31458022adc9cc793cf3d75444aa1528d367"
+    },
+    {
+      "path": "scripts/assets/naturalearth-lowres.geojson",
+      "sha256": "c83795a6615b793401ac04d642792d9a2fb11d3a8392fd9908b81805d7e9a114"
+    },
+    {
+      "path": "scripts/download_artifacts.py",
+      "sha256": "eb4732e4cec64051bb268be5312741d6ae1e378c8176f375eb0989be2c7d65e3"
+    },
+    {
+      "path": "scripts/enrich_dataset_manifests.py",
+      "sha256": "f71e5a2b8eda966c2b6fcb6ba664a0ce27719fdd7884a06bc56311c7138e9a46"
+    },
+    {
+      "path": "scripts/evaluate_intensity_correction.py",
+      "sha256": "7061eb15a52c5c84ec640f450eaa5da119c73933ce3cbe1cb9c21a5188ee44e4"
+    },
+    {
+      "path": "scripts/evaluate_intensity_forecast.py",
+      "sha256": "467e94e599b596d67fcb5e62340e0059de9460784c6b6b04e8b8a768cc0d50ec"
+    },
+    {
+      "path": "scripts/evaluate_intensity_models.py",
+      "sha256": "4f2708f8d37ab39562b8a832368ba4b89ab854cf6c93a6b66941aa1f72a6e93b"
+    },
+    {
+      "path": "scripts/export_geo_sar_geotiffs.py",
+      "sha256": "f147573e446af689ff3043cdf7adc1295089172e840e2a4398221ee9a8802659"
+    },
+    {
+      "path": "scripts/export_geostat_images.py",
+      "sha256": "ed2f98063ed2e65c8fe3b4cee5e16a2f990c396124421ba03d765c02f44a87df"
+    },
+    {
+      "path": "scripts/export_geotiff_intensity_cache.py",
+      "sha256": "d5bdb50767841fe11c65d4e62e727108194624066acb434fa97df77fd5573399"
+    },
+    {
+      "path": "scripts/export_intensity_forecast_cache.py",
+      "sha256": "51b72dd76bee81430575e0a280726eba223fe86ba5a3313d72df654487b84d5f"
+    },
+    {
+      "path": "scripts/export_joint_intensity_cache.py",
+      "sha256": "0bef507ee7aff25507aab21fca2aaa5a9bee0393ad59afe9bf1c54ca6ef4625b"
+    },
+    {
+      "path": "scripts/export_training_corpus_manifest.py",
+      "sha256": "a93c15e589494b10b18c772e66a911a23d396e3822b4a4c5adc21e2abbfb7503"
+    },
+    {
+      "path": "scripts/export_unet_intensity_cache.py",
+      "sha256": "3932a5178cfa7fca5dcfdf8cd3ceeca0f9d1525346be6f14e86aed89b93cff90"
+    },
+    {
+      "path": "scripts/hpc/export_geo_sar_geotiffs_cpu.pbs",
+      "sha256": "d2175b649c03f9413a063b0d3fe23f65ff0376ebc732e14d149667376dae5bcb"
+    },
+    {
+      "path": "scripts/local_env.py",
+      "sha256": "95c58a60e473fdaaf2ee7c147b79ba3768353cda17ccc235a5ac3fe69c215f7c"
+    },
+    {
+      "path": "scripts/pmw_conditioning.py",
+      "sha256": "a982b72ba9c32d3b1211dd026f9070a611ccbaf3fc2691b03618a98e99c75b7e"
+    },
+    {
+      "path": "scripts/render_checkpoint_reconstructions.py",
+      "sha256": "c743a6b325db12822f7ecc01833c5b16ab975697f8a278e12e4240a8e2654b02"
+    },
+    {
+      "path": "scripts/render_docs_data_examples.py",
+      "sha256": "79d082cc6d6f72655dec95b73b5c39d70819e2e5323025f4f9583f41c2b928e3"
+    },
+    {
+      "path": "scripts/run_dashboard_mlp_forecast_inference.py",
+      "sha256": "fd4567bb8da7dd85f9a71ed5e62db836d5ca779e31d83a90a99cb75bf80b34b8"
+    },
+    {
+      "path": "scripts/run_intensity_correction_inference.py",
+      "sha256": "a89cb0f256c843ed75b8cf2e3881b6d3efd8f6b59346385eac15e9449fa34213"
+    },
+    {
+      "path": "scripts/run_intensity_forecast_inference.py",
+      "sha256": "8b08e38411eed74fc6b4af381e72fe086cc41ef714dc22dc5052fc2c8d582e72"
+    },
+    {
+      "path": "scripts/run_storm_unet_inference.py",
+      "sha256": "6c0343dee23e37e441f92f8cee006f4b4f00056ae9e643b7a09c0ac0709aac54"
+    },
+    {
+      "path": "src/ERA5Residual.py",
+      "sha256": "875f265fb2736779d1ee361f700d9acaa0acd57bf95b4a28fa64283b631d9706"
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "bdee10456fa8b18a1870fb16f170c8ba60c5d356156b377da46343df0dedd041"
+    },
+    {
+      "path": "src/experiment_tracking.py",
+      "sha256": "59aa3b3cf73ad61001166c2f64445743423984c1c6dbfeb842e27910be7ea805"
+    },
+    {
+      "path": "src/geo2wf/__init__.py",
+      "sha256": "b0a2683fe7e40e46b1b807e5859fda86d0caafe326368b1ac11b99c9278dcab3"
+    },
+    {
+      "path": "src/geo2wf/cli/__init__.py",
+      "sha256": "4351caddc990d38aa8ccde680c5934756384e0774cf3f1b19ebff7f07b6458a4"
+    },
+    {
+      "path": "src/geo2wf/cli/evaluate.py",
+      "sha256": "38d7253f4893968c74a5bd5e83c24aa394f058727d01a7f4886fe8df0bb01f36"
+    },
+    {
+      "path": "src/geo2wf/cli/export.py",
+      "sha256": "b8fa34b10099ecbcc7886d6145d844ee168479039e09039d382c3dff80ac4188"
+    },
+    {
+      "path": "src/geo2wf/cli/infer.py",
+      "sha256": "4ae9f506021f1a963ce16d2bee86eaa27abdd98af74742968c4582294f23c405"
+    },
+    {
+      "path": "src/geo2wf/cli/train.py",
+      "sha256": "66ebed2d574a3a5fcd7a6d67e96a52cfc39f145ec4e45816613d5663550354c7"
+    },
+    {
+      "path": "src/geo2wf/config/__init__.py",
+      "sha256": "c85fe5601780c03b3de0d10aab709d53d733832d49180501534ba7d32e67b3fd"
+    },
+    {
+      "path": "src/geo2wf/config/loading.py",
+      "sha256": "c1cb257dc8f42f0a032c72294952e8ba41d111e6faca3e2dc1a296b001c11c7f"
+    },
+    {
+      "path": "src/geo2wf/config/local_environment.py",
+      "sha256": "dc64cb8b7d38f4f62de064685489bb3ff2e98d2d4b342fa3a02919e45e36e9ac"
+    },
+    {
+      "path": "src/geo2wf/config/schemas.py",
+      "sha256": "e612207b7952d05332b73a3ab3fa2bd43d87f8b2088cb96f9f3b4c9542123d8b"
+    },
+    {
+      "path": "src/geo2wf/data/__init__.py",
+      "sha256": "1b60f8c048584daa3b61eee8efe5f79ae2181f0166c7031396faa95513c843c1"
+    },
+    {
+      "path": "src/geo2wf/data/augmentation.py",
+      "sha256": "e4202a7d4a0654c5445290d83a0f2680dc5c8b013f2095b0d5887244d5af55bb"
+    },
+    {
+      "path": "src/geo2wf/data/collation.py",
+      "sha256": "80019c32d3fe3eb6aa7b77496f16e7d8a905e9768954c3b9220f04c22252d7be"
+    },
+    {
+      "path": "src/geo2wf/data/contracts.py",
+      "sha256": "5bbb4e1fee29b847fb55bb79a9a5a3720ba3cf30fd41ee14a7e0badf00d625fc"
+    },
+    {
+      "path": "src/geo2wf/data/datamodule.py",
+      "sha256": "c3b72374d1c9b82aee50e4553a238fa25dbf0649a8e5ccf967865a64566b0115"
+    },
+    {
+      "path": "src/geo2wf/data/datasets/__init__.py",
+      "sha256": "87a5b0e64a865eadadec64ab55b7e41e7ff936ed027f6ae9fda5954c888e9f2b"
+    },
+    {
+      "path": "src/geo2wf/data/datasets/paired_geotiff.py",
+      "sha256": "9e77f29028cf0b9ffa1642d37d7f5b5d5287a0c03687b45a03b1813c5bd76c95"
+    },
+    {
+      "path": "src/geo2wf/data/encoder_intensity.py",
+      "sha256": "7a798c093e35485f09eeb664fc3aeb8b8c9dccfba73307464298955198cd439d"
+    },
+    {
+      "path": "src/geo2wf/data/features.py",
+      "sha256": "a6e63b174818097b6ae4e09aa60185775eef6bef9296ada016ecfc274c4b4575"
+    },
+    {
+      "path": "src/geo2wf/data/intensity.py",
+      "sha256": "d0de163c663a077e4e4e7ebe2fe35b6bcfdc75d5216af72ab7be202e0d1180c0"
+    },
+    {
+      "path": "src/geo2wf/data/intensity_forecast.py",
+      "sha256": "3311a5d874fa959528c71954de9b5466e7ff78e2ff4d4aba7aa6b6cacb6c53e1"
+    },
+    {
+      "path": "src/geo2wf/data/joint_intensity.py",
+      "sha256": "06e32f94fd6eccff4899f625372cc5fa1a940e6672e19dcf345471fa8006ccb1"
+    },
+    {
+      "path": "src/geo2wf/data/manifests.py",
+      "sha256": "36f1b3b7bb0ab65c4dd94686717e7ac5d8aa1bded22c961b2293caeab809f628"
+    },
+    {
+      "path": "src/geo2wf/data/normalization.py",
+      "sha256": "2dd3a88dd21fdc5286866b800a3a5739c8cce5a5baf41001b935966bf8351074"
+    },
+    {
+      "path": "src/geo2wf/data/raster_io.py",
+      "sha256": "244c7464f8d0d19040d783df3112652c2081e800c327d5eeed353750b0e357d3"
+    },
+    {
+      "path": "src/geo2wf/data/sampling.py",
+      "sha256": "a15e3e0ce368cf67b8cd92789ae4839020062cbc92bdc7918d79efd3d7b3b133"
+    },
+    {
+      "path": "src/geo2wf/evaluation/__init__.py",
+      "sha256": "b787bebc9dad74b80b7a4a94c6088bf9d4f8413878e0b10511bb68f554a739e5"
+    },
+    {
+      "path": "src/geo2wf/evaluation/metrics.py",
+      "sha256": "d7ab88325af08a06e59474669dc76a87cf726e05750abc8a8694404b1406927c"
+    },
+    {
+      "path": "src/geo2wf/historical/__init__.py",
+      "sha256": "ae69f2a9798b28c60b20e7ced665a77bf07a76fa00ddcdfe14d1000c97f84e55"
+    },
+    {
+      "path": "src/geo2wf/historical/acquisition.py",
+      "sha256": "d0c3df41df1c55f75b4f33e808ae2ffb56cc4741353e8b21213d97aad244d304"
+    },
+    {
+      "path": "src/geo2wf/historical/dataset.py",
+      "sha256": "8eee5cfab0c990a2f923ab2cd6f6f8d36e321d080e567f6ba5e2f07fa0faca75"
+    },
+    {
+      "path": "src/geo2wf/historical/run.py",
+      "sha256": "75e97e4d7a23c958230edb2ce2d07e528b31b52e5c647802b19e1664fe65a1a9"
+    },
+    {
+      "path": "src/geo2wf/historical/training.py",
+      "sha256": "a74ad90c7d4c85d9e42cba251c376419b7a7ff316431015554adda8ee5bb53d0"
+    },
+    {
+      "path": "src/geo2wf/layers.py",
+      "sha256": "b70b6609bd72961523d8950091f3f6e53481f139ccb94857d4e52729e25ce9c9"
+    },
+    {
+      "path": "src/geo2wf/metrics/__init__.py",
+      "sha256": "c0c21e0da89b5c75083ec9a6a1d2dadabb8ade2a28912f2e0d06e2a7f82fe9c0"
+    },
+    {
+      "path": "src/geo2wf/metrics/image_quality.py",
+      "sha256": "3ecc6be0cc6c0d1aac6d47f2c41145e7c49773c204956710da6a053fa0e3b475"
+    },
+    {
+      "path": "src/geo2wf/metrics/wind.py",
+      "sha256": "9eb545779d33f649ab6b9080b1ee0a6d24c7c2b72201f9aa0c8794bf9040c1ed"
+    },
+    {
+      "path": "src/geo2wf/models/__init__.py",
+      "sha256": "b732a8f0691116cd64afcad9e1ee8e1aca25ffb6373631ccac24171c4ddf1101"
+    },
+    {
+      "path": "src/geo2wf/models/base.py",
+      "sha256": "38bede89e7a5c0e4109309f483916db8e21ea8449bf69222ccf7d47e3a348a89"
+    },
+    {
+      "path": "src/geo2wf/models/bottleneck_unet_mlp/__init__.py",
+      "sha256": "97ba7c9768da7559529fdc948a938bca73bf62cd2710b2ea01d3a70faa9cb2cd"
+    },
+    {
+      "path": "src/geo2wf/models/bottleneck_unet_mlp/encoder_only.py",
+      "sha256": "610606b76df9b6faa2b83277e93204dfa49527510d635cf83510599df55f9d9b"
+    },
+    {
+      "path": "src/geo2wf/models/bottleneck_unet_mlp/module.py",
+      "sha256": "95ac3b4d1aaea2ea52dfac7a60b1966eea435b9d0c8d7ea574356668fa8ad3f5"
+    },
+    {
+      "path": "src/geo2wf/models/deterministic_residual/__init__.py",
+      "sha256": "7256a084ab65091f94a37790981b6d2e784b326177f4f1823caa5a1d74727d8a"
+    },
+    {
+      "path": "src/geo2wf/models/deterministic_residual/module.py",
+      "sha256": "04200877e0e764f0fb165a615ca20c07d0c624a205451d60df42a1a8b52b6984"
+    },
+    {
+      "path": "src/geo2wf/models/intensity_correction/__init__.py",
+      "sha256": "8973fcb52e58582b6e9706ffddf884d74eef1ee78ee60add01d54c59562f34fb"
+    },
+    {
+      "path": "src/geo2wf/models/intensity_correction/module.py",
+      "sha256": "2dd39d54c46f3e7de5851b32045c55d4861ad8fb208ad5a3f9607ba3837fff9e"
+    },
+    {
+      "path": "src/geo2wf/models/intensity_forecast/__init__.py",
+      "sha256": "46e2d7cda88e2d4139a726d8be8ea8e6e8a21ff29629e6dd0a626f9010d5c0f2"
+    },
+    {
+      "path": "src/geo2wf/models/intensity_forecast/module.py",
+      "sha256": "23092a537eb0a78f26d669ba03b7a20a76e960193a6be0d70fc4d0e0036e3268"
+    },
+    {
+      "path": "src/geo2wf/objectives/__init__.py",
+      "sha256": "e22f1e20af4e698ff77519ac63df17820dc111e3de35983c45ebd7db286212f4"
+    },
+    {
+      "path": "src/geo2wf/objectives/masked.py",
+      "sha256": "5aaba3711c6d92cf0d468d104c7dfc93c1b7057209a023e44ff36475dfbdff1c"
+    },
+    {
+      "path": "src/geo2wf/preprocessing/__init__.py",
+      "sha256": "2c54d3512493878e02c9ffbf230de26a72a12d19a403e18bda7297ad8624c43e"
+    },
+    {
+      "path": "src/geo2wf/preprocessing/features.py",
+      "sha256": "701e56c23162ea3925b5ba47253aa26ae569cccd133e48ee42fc18ee7159b8e4"
+    },
+    {
+      "path": "src/geo2wf/tracking/__init__.py",
+      "sha256": "12001c51505e5ea2243e405105cc9d7fe2093cb85ac191657ff39c1fc9552059"
+    },
+    {
+      "path": "src/geo2wf/tracking/callbacks.py",
+      "sha256": "277c2208f5a40df0c3a706ae6823395101b836cf76f603ed3e278b4f5e1df19b"
+    },
+    {
+      "path": "src/geo2wf/tracking/forecast_full_storm_media.py",
+      "sha256": "23677649e637ca900eaac23010d6c6ceba693e7960e53b1fc291eecdf781cb7b"
+    },
+    {
+      "path": "src/geo2wf/tracking/forecast_media.py",
+      "sha256": "2e369e7c206f4bdd36da20106abd1c3acacc92832fd8f4310d499de388785b2f"
+    },
+    {
+      "path": "src/geo2wf/tracking/intensity_media.py",
+      "sha256": "51390578cd9d856136e94d4c3d890a4132d6128db83e9fac8cbcfe99216188be"
+    },
+    {
+      "path": "src/geo2wf/tracking/reconstruction_media.py",
+      "sha256": "62fd26738e2efe053462d988787212da9eb7941f4f6d69a8a919ee29ee55c0ae"
+    },
+    {
+      "path": "src/geo2wf/tracking/run_manifest.py",
+      "sha256": "0409579fe5335555db7e68488254b81e5ac59bd4b8d9ff9d5a5c79a040131557"
+    },
+    {
+      "path": "src/geo2wf/training.py",
+      "sha256": "61a0230671e082b3678abbe99c27c82d53471b34cc65a2a18c0431d77cca2730"
+    },
+    {
+      "path": "src/geo2wf/visualization/__init__.py",
+      "sha256": "ceac808e86fc61d244e6c242144aa75a16ae6f100470e088a8a4858c375d3632"
+    },
+    {
+      "path": "src/geo2wf/visualization/wind_fields.py",
+      "sha256": "f906162e630e48683b83e40fa88f1ba43198f2a8e24567de31e0f7e70ecdc3f3"
+    },
+    {
+      "path": "src/reconstruction_logging.py",
+      "sha256": "c851625a6b405cfd96d624e1116fef034d4a19f556ccf429f7707f5bb8be948a"
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "sha256": "e8a536d775c994350fc9504bc72b04f4b1ab7ecff5e03fce146f96bb62faaab1"
+    },
+    {
+      "path": "src/utils/plotting.py",
+      "sha256": "68b699ac0d331132b842c772890156977084f16c0bbc3b03bd69206cfac0b5ba"
+    },
+    {
+      "path": "src/wind_metrics.py",
+      "sha256": "52c61d2435f2c801a92a89dc5c085038633e11e31e91a093407a9d3fda69d36e"
+    },
+    {
+      "path": "tests/test_bottleneck_unet_mlp.py",
+      "sha256": "97072cc3df0a57807676531fa0f791adeee605728afd8d900038b406c94ac65a"
+    },
+    {
+      "path": "tests/test_dashboard_mlp_forecast_inference.py",
+      "sha256": "4dda91cbeb44f580375ee86dcb9131e30207b888f679e61b8a600b9319fd8c47"
+    },
+    {
+      "path": "tests/test_data_learning_repairs.py",
+      "sha256": "cbbe8a808fb5e1adc9ef0186b6f51e9df0ee21a38c04cb9951335fb8088ef5e1"
+    },
+    {
+      "path": "tests/test_dataset_era5.py",
+      "sha256": "5c3001e8382b9b1ffb1ff6c1a741399350d98a5f923079015d0af2fffd074ab8"
+    },
+    {
+      "path": "tests/test_dataset_helpers.py",
+      "sha256": "2ae913aa7fa71938e363592a413a04e543a7103992e84549b7ef802180d34d0d"
+    },
+    {
+      "path": "tests/test_dataset_optional_companions.py",
+      "sha256": "34bdca596f37229e8291fcb196690f752738abdbabf5704ed130462f641dd24e"
+    },
+    {
+      "path": "tests/test_enrich_dataset_manifests.py",
+      "sha256": "7820a84efb0e261f23eb33c6187252505abceccea1cefb8e2b2f3f1c547766d7"
+    },
+    {
+      "path": "tests/test_era5_residual.py",
+      "sha256": "ca3032b12b5c229b1c6b56f20afcb24e3f499002452cbeca689027c3cdaf3a77"
+    },
+    {
+      "path": "tests/test_experiment_tracking.py",
+      "sha256": "650b425b797a816f6db9e02591aee8d01102d43601ab605442ddc2c7858ce89f"
+    },
+    {
+      "path": "tests/test_export_geo_sar_extensions.py",
+      "sha256": "6c79b1cb6390d91bd88560d1d08ac4e5d7635548c93c00fd8805fbc231df424e"
+    },
+    {
+      "path": "tests/test_historical_acquisition.py",
+      "sha256": "376179da11a679e6ce9ff8219442160e3002d596f6532f33bd57833ea1116623"
+    },
+    {
+      "path": "tests/test_historical_runner.py",
+      "sha256": "c4215204b765cbf21adb2ad9043999624f6420740fd9b3b408cb570bc59a5daa"
+    },
+    {
+      "path": "tests/test_historical_storms.py",
+      "sha256": "066abb01593fae1bb5a32a6b498a473ccd49d6a7eaa0d318f8c1f51ae53ce000"
+    },
+    {
+      "path": "tests/test_image_quality_metrics.py",
+      "sha256": "b032beeb793a81444534505f3f6d96a813839c79e08ad345108115ed82f8bce4"
+    },
+    {
+      "path": "tests/test_intensity_correction.py",
+      "sha256": "6ad206a44d6ac9ae15f46ebba72b155c1dd38ac01ad18429e18136e6b04fe172"
+    },
+    {
+      "path": "tests/test_intensity_forecast.py",
+      "sha256": "2044d54a606674bc281d475777e95a7947fc4f502106d04f3a50049b02c87d16"
+    },
+    {
+      "path": "tests/test_intensity_model_comparison.py",
+      "sha256": "467222d7fe2314c0b9c6e724852a43ab0201b6f357e8168bd6b68afcf1996735"
+    },
+    {
+      "path": "tests/test_intensity_training_integration.py",
+      "sha256": "45eee7ca5e0cea2061575adb5f96f311b8848f7a386ae60132672f1ebc8b2472"
+    },
+    {
+      "path": "tests/test_intensity_wandb.py",
+      "sha256": "58780c6d7a7c516ec6d2b6aee5c963dcb8f3e69f960e302c670d46657431d3d3"
+    },
+    {
+      "path": "tests/test_modular_architecture.py",
+      "sha256": "2a34d1e3ae57c00e54d37643a9d4472aeb565d79d932cc2a59da7313f35e39ca"
+    },
+    {
+      "path": "tests/test_reconstruction_logging.py",
+      "sha256": "2967f5f66b7288eb041be7bb2981de45ab4e493b37a97520861d9cd7210ee049"
+    },
+    {
+      "path": "tests/test_run_storm_unet_inference.py",
+      "sha256": "0406ad85fec7d73aacea01fdcefffa364a5c7bd1893408142c11ae74f953c0ba"
+    },
+    {
+      "path": "tests/test_training_corpus_manifest.py",
+      "sha256": "c79161a81e08aff256a76bc16d476fe995c5ea2bfc2b069da7dc3258b5ad71aa"
+    },
+    {
+      "path": "tests/test_wind_metrics.py",
+      "sha256": "a14a4067be983bd11efbc30ee2f906da1b58452b93e28ffddfad578673e064b6"
+    },
+    {
+      "path": "train.py",
+      "sha256": "c75358b95ac23cca74a9f759fcbf4162c199ad18a5bb7d14ec9148fd7307744e"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "df3676bc1186df099eb4875d914473894cdfb5117d642779622dedd8e30c10ed"
+    }
+  ],
+  "scope": {
+    "science": [
+      "models, datasets, normalization, preprocessing, metrics",
+      "training, experiment configs, tracking, scientific inference",
+      "paper tables, figures, checkpoint/cohort/source provenance",
+      "published Hugging Face catalogs and local data recovery records",
+      "historical acquisition and scalar adaptation",
+      "archived scientific implementations and publication workflows"
+    ],
+    "application_retained": [
+      "StormSense UI and Worker",
+      "operational scheduling, SQLite state, model selection, publication",
+      "documentation site and static explorer assets",
+      "Docker, Compose and hosted runner integration"
+    ],
+    "preserved_locally": [
+      "original conference worktree and its uncommitted edits",
+      "private Git history-rewrite backups",
+      "large datasets, checkpoints, downloads and application state"
+    ]
+  },
+  "compatibility": [
+    "geo2wf model module names retained for existing checkpoints",
+    "scientific script wrappers preserve original command paths",
+    "root configs symlink points to packaged scientific configs",
+    "server consumes a versioned scientific wheel without a sibling checkout"
+  ],
+  "validation_limits": [
+    "Scientific unit/integration tests include synthetic CPU training and checkpoint round trips.",
+    "Data-free publication tables and saved-output figures are verified separately.",
+    "Full checkpoint reevaluation and retraining require externally stored data and checkpoints."
+  ]
+}

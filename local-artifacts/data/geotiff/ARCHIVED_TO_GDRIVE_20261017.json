@@ -1,0 +1,11 @@
+{
+  "source": "/work/code/geo2wf/data/geotiff",
+  "size": 7152025600,
+  "md5": "309351da6f2c9b444f7990a16dcca1f5",
+  "remote": "gdrive:hyperalisserver/work/code/geo2wf/data/geotiff.20261017.tar",
+  "id": "1Yk9nou1m1cWOk7IYIcVB6iNhQ3o1Hc9t",
+  "remote_verified": true,
+  "local_deleted": true,
+  "local_source_removed": true,
+  "restore_command": "rclone copyto 'gdrive:hyperalisserver/work/code/geo2wf/data/geotiff.20261017.tar' '/tmp/geotiff.20261017.tar' && tar -xf '/tmp/geotiff.20261017.tar' -C '/work/code/geo2wf/data'"
+}

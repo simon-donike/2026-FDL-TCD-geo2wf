@@ -1,0 +1,23 @@
+# @package _global_
+defaults:
+  - override /data: joint_geo_sar_ibtracs
+  - override /model: bottleneck_unet_mlp
+
+trainer:
+  max_epochs: 1000
+  checkpoint:
+    monitor: val/loss
+    mode: min
+    save_top_k: 2
+    save_last: true
+  early_stopping:
+    enabled: true
+    monitor: val/loss
+    mode: min
+    patience: 50
+logging:
+  wandb:
+    name: bottleneck-unet-mlp-joint
+    project: geo2wf
+    enabled: true
+    log_model: false

@@ -1,0 +1,326 @@
+[
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_era5_max_wind",
+    "subset": "all_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 5.446081161499023,
+    "catalog_cpu": 5.446081161499023,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_era5_max_wind",
+    "subset": "ri_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 6.554601669311523,
+    "catalog_cpu": 6.554601669311523,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_era5_max_wind_radii",
+    "subset": "all_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 5.688027858734131,
+    "catalog_cpu": 5.688027858734131,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_era5_max_wind_radii",
+    "subset": "all_validation",
+    "target": "rmw",
+    "previous_cpu": 20.70745086669922,
+    "catalog_cpu": 20.70745086669922,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_era5_max_wind_radii",
+    "subset": "ri_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 6.903985500335693,
+    "catalog_cpu": 6.903985500335693,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_era5_max_wind_radii",
+    "subset": "ri_validation",
+    "target": "rmw",
+    "previous_cpu": 16.269479751586914,
+    "catalog_cpu": 16.269479751586914,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_no_era5_max_wind",
+    "subset": "all_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 6.827948570251465,
+    "catalog_cpu": 6.827948570251465,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_no_era5_max_wind",
+    "subset": "ri_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 6.644758224487305,
+    "catalog_cpu": 6.644758224487305,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_no_era5_max_wind_radii",
+    "subset": "all_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 6.297182559967041,
+    "catalog_cpu": 6.297182559967041,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_no_era5_max_wind_radii",
+    "subset": "all_validation",
+    "target": "rmw",
+    "previous_cpu": 19.43617057800293,
+    "catalog_cpu": 19.43617057800293,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_no_era5_max_wind_radii",
+    "subset": "ri_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 7.197906494140625,
+    "catalog_cpu": 7.197906494140625,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_no_sar_no_era5_max_wind_radii",
+    "subset": "ri_validation",
+    "target": "rmw",
+    "previous_cpu": 13.13791275024414,
+    "catalog_cpu": 13.13791275024414,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_era5_max_wind",
+    "subset": "all_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 5.795080610791093,
+    "catalog_cpu": 5.795080610791093,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_era5_max_wind",
+    "subset": "ri_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 8.128526051839193,
+    "catalog_cpu": 8.128526051839193,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_era5_max_wind_radii",
+    "subset": "all_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 5.8594102919476585,
+    "catalog_cpu": 5.8594102919476585,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_era5_max_wind_radii",
+    "subset": "all_validation",
+    "target": "rmw",
+    "previous_cpu": 19.513503992332602,
+    "catalog_cpu": 19.513503992332602,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_era5_max_wind_radii",
+    "subset": "ri_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 7.3158970673878985,
+    "catalog_cpu": 7.3158970673878985,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_era5_max_wind_radii",
+    "subset": "ri_validation",
+    "target": "rmw",
+    "previous_cpu": 13.783760070800781,
+    "catalog_cpu": 13.783760070800781,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_no_era5_max_wind",
+    "subset": "all_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 6.693934782496038,
+    "catalog_cpu": 6.693934782496038,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_no_era5_max_wind",
+    "subset": "ri_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 6.866568406422933,
+    "catalog_cpu": 6.866568406422933,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_no_era5_max_wind_radii",
+    "subset": "all_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 6.343564765258405,
+    "catalog_cpu": 6.343564765258405,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_no_era5_max_wind_radii",
+    "subset": "all_validation",
+    "target": "rmw",
+    "previous_cpu": 18.243987281367463,
+    "catalog_cpu": 18.243987281367463,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_no_era5_max_wind_radii",
+    "subset": "ri_validation",
+    "target": "maximum_wind",
+    "previous_cpu": 5.4685282707214355,
+    "catalog_cpu": 5.4685282707214355,
+    "difference": 0.0
+  },
+  {
+    "table": "latent",
+    "experiment": "latent_sar_no_era5_max_wind_radii",
+    "subset": "ri_validation",
+    "target": "rmw",
+    "previous_cpu": 11.184453964233398,
+    "catalog_cpu": 11.184453964233398,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "with-era5",
+    "model": "unet_raw_max",
+    "subset": "table",
+    "previous_cpu": 6.445825563286835,
+    "catalog_cpu": 6.445825563286835,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "with-era5",
+    "model": "unet_correction",
+    "subset": "table",
+    "previous_cpu": 5.528623765369631,
+    "catalog_cpu": 5.528623765369631,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "with-era5",
+    "model": "joint_unet_mlp",
+    "subset": "table",
+    "previous_cpu": 7.302382536654203,
+    "catalog_cpu": 7.302382536654203,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "with-era5",
+    "model": "unet_raw_max",
+    "subset": "rapid_intensification_table",
+    "previous_cpu": 14.474693398726615,
+    "catalog_cpu": 14.474693398726615,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "with-era5",
+    "model": "unet_correction",
+    "subset": "rapid_intensification_table",
+    "previous_cpu": 10.511828422546387,
+    "catalog_cpu": 10.511828422546387,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "with-era5",
+    "model": "joint_unet_mlp",
+    "subset": "rapid_intensification_table",
+    "previous_cpu": 7.716179094816509,
+    "catalog_cpu": 7.716179094816509,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "without-era5",
+    "model": "unet_raw_max",
+    "subset": "table",
+    "previous_cpu": 7.5184925682139845,
+    "catalog_cpu": 7.5184925682139845,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "without-era5",
+    "model": "unet_correction",
+    "subset": "table",
+    "previous_cpu": 6.71504308142752,
+    "catalog_cpu": 6.71504308142752,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "without-era5",
+    "model": "joint_unet_mlp",
+    "subset": "table",
+    "previous_cpu": 5.885504097308752,
+    "catalog_cpu": 5.885504097308752,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "without-era5",
+    "model": "unet_raw_max",
+    "subset": "rapid_intensification_table",
+    "previous_cpu": 17.859493657162314,
+    "catalog_cpu": 17.859493657162314,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "without-era5",
+    "model": "unet_correction",
+    "subset": "rapid_intensification_table",
+    "previous_cpu": 12.506736554597554,
+    "catalog_cpu": 12.506736554597554,
+    "difference": 0.0
+  },
+  {
+    "table": "architecture",
+    "regime": "without-era5",
+    "model": "joint_unet_mlp",
+    "subset": "rapid_intensification_table",
+    "previous_cpu": 8.934168163098787,
+    "catalog_cpu": 8.934168163098787,
+    "difference": 0.0
+  }
+]

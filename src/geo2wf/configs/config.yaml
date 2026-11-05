@@ -1,0 +1,19 @@
+# GEO-SAR export defaults. Training uses configs/modular.yaml and the grouped
+# data/model/experiment choices; this file is intentionally export-only.
+export:
+  data_root: /lustre/scratch/1054/tropical_cyclone_dynamics/data
+  manifest_file: /lustre/scratch/1054/tropical_cyclone_dynamics/data/index-files/observation_manifest_v5.csv
+  output_root: data/geotiff/geo_sar
+  geo_channel_set: common4
+  splits: [train, val, test]
+  grid_size: 256
+  grid_resolution: 0.027
+  closest_match_hours: 0.5
+  include_pmw: false
+  pmw_max_time_gap_hours: 12.0
+  include_ibtracs: false
+  ibtracs_max_time_gap_hours: 6.1
+  center: image_center
+  shift_center: true
+  pad: 8
+  limit: null

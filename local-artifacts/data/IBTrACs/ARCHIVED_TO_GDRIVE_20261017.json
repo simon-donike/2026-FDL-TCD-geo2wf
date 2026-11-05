@@ -1,0 +1,11 @@
+{
+  "source": "/work/code/geo2wf/data/IBTrACs",
+  "size": 330711040,
+  "md5": "407b370479d60905ae86123c3b90c0ff",
+  "remote": "gdrive:hyperalisserver/work/code/geo2wf/data/IBTrACs.20261017.tar",
+  "id": "1Efd-Tf1Q5rXgpKxDB_CRWviIiW17T-pp",
+  "remote_verified": true,
+  "local_deleted": true,
+  "local_source_removed": true,
+  "restore_command": "rclone copyto 'gdrive:hyperalisserver/work/code/geo2wf/data/IBTrACs.20261017.tar' '/tmp/IBTrACs.20261017.tar' && tar -xf '/tmp/IBTrACs.20261017.tar' -C '/work/code/geo2wf/data'"
+}

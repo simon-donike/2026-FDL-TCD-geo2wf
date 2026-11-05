@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "dataset_format": "parquet-catalog-native-assets",
+  "dataset_repository_type": "dataset",
+  "model_repository_type": "model",
+  "asset_identity": "sha256",
+  "profiles": ["index-only", "paper-eval", "train", "storms", "all"],
+  "processing_exports": ["geo_sar_10bands_era5", "geo_sar_10bands_era5_v2_pmw"],
+  "cohort_authority": "release/registry.json model data_metadata; then resolved config roots",
+  "source_observation_index": "inference/inf_data/index-files/observation_manifest_v6.csv",
+  "original_storm_index": "inference/inf_data/index-files/spacehpc_manifest_splits.csv",
+  "staging_root": "artifacts/upload",
+  "publication": "explicit upload action only"
+}

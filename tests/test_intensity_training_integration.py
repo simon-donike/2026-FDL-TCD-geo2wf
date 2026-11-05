@@ -1,0 +1,167 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import pytorch_lightning as pl
+import torch
+
+from geo2wf.data.intensity import UNetIntensityDataModule
+from geo2wf.config import compose_config
+from geo2wf.models.intensity_correction import UNetIntensityCorrection
+
+
+def test_mlp_only_optional_structure_head_outputs_and_trains() -> None:
+    model = UNetIntensityCorrection(
+        field_base_channels=4,
+        field_channel_mults=(1, 2),
+        fusion_hidden_features=16,
+        metadata_hidden_features=8,
+        use_field=False,
+        use_metadata=True,
+        structure_head_enabled=True,
+        structure_loss_weight=0.25,
+    )
+    batch = {
+        "wind_field": torch.full((2, 16, 16), 20.0),
+        "valid_mask": torch.ones((2, 16, 16), dtype=torch.bool),
+        "distance_to_center": torch.zeros((2, 16, 16)),
+        "metadata": torch.zeros((2, 19)),
+        "target_wind_ms": torch.tensor([25.0, 30.0]),
+        "sample_weight": torch.ones(2),
+    }
+    for index, key in enumerate(
+        (
+            "ibtracs_eye_size_km",
+            "ibtracs_rmw_km",
+            "ibtracs_r34_equivalent_km",
+            "ibtracs_r50_equivalent_km",
+            "ibtracs_r64_equivalent_km",
+        )
+    ):
+        batch[key] = torch.full((2,), 15.0 + index * 10.0)
+        batch[f"{key}_valid"] = torch.ones(2, dtype=torch.bool)
+    batch["ibtracs_eye_size_km"][0] = torch.nan
+    batch["ibtracs_eye_size_km_valid"][0] = False
+
+    loss, prediction = model._loss(batch)
+    structure_loss, _ = model._structure_loss_and_metrics(prediction, batch)
+
+    assert prediction.structure_prediction_km.shape == (2, 5)
+    assert structure_loss > 0.0
+    assert torch.isfinite(structure_loss)
+    assert torch.isfinite(loss)
+    assert loss > structure_loss * model.structure_loss_weight
+
+
+def test_image_radius_baseline_metrics_are_logged_against_ibtracs() -> None:
+    reference = torch.zeros(2)
+    batch = {}
+    names = ("rmw", "r34_equivalent", "r50_equivalent", "r64_equivalent")
+    for index, name in enumerate(names):
+        target_key = f"ibtracs_{name}_km"
+        image_key = f"unet_image_{name}_km"
+        batch[target_key] = torch.tensor([20.0 + index, 30.0 + index])
+        batch[f"{target_key}_valid"] = torch.ones(2, dtype=torch.bool)
+        batch[image_key] = batch[target_key] + 5.0
+        batch[f"{image_key}_valid"] = torch.ones(2, dtype=torch.bool)
+
+    metrics = UNetIntensityCorrection._unet_image_structure_metrics(batch, reference)
+
+    assert metrics["unet_image_rmw_mae_km"] == 5.0
+    assert metrics["unet_image_r34_equivalent_bias_km"] == 5.0
+
+
+def test_unet_correction_radius_experiment_configs() -> None:
+    image = compose_config(["experiment=unet_intensity_correction_image_radii"])
+    mlp = compose_config(["experiment=unet_intensity_correction_mlp_radii"])
+
+    assert image["model"]["structure_head_enabled"] is False
+    assert image["model"]["structure_loss_weight"] == 0.0
+    assert mlp["model"]["structure_head_enabled"] is True
+    assert mlp["model"]["structure_loss_weight"] == 0.25
+    assert image["data"]["root"].endswith("unet_intensity_structure_v3")
+
+
+def _write_split(root: Path, split: str, storm_id: str) -> None:
+    fields = root / split / "fields"
+    fields.mkdir(parents=True)
+    rows = []
+    for index, (wind_ms, category) in enumerate(((20.0, 0), (35.0, 1))):
+        wind = np.full((32, 32), wind_ms - 5.0, dtype=np.float32)
+        wind[8, 8] = wind_ms
+        mask = np.ones_like(wind, dtype=np.uint8)
+        distance = np.linspace(0.0, 1.0, wind.size, dtype=np.float32).reshape(
+            wind.shape
+        )
+        relative = Path(split) / "fields" / f"{split}-{index}.npz"
+        np.savez_compressed(
+            root / relative,
+            wind_speed_ms=wind,
+            valid_mask=mask,
+            distance_to_center=distance,
+        )
+        rows.append(
+            {
+                "sample_id": f"{split}-{index}",
+                "storm_id": storm_id,
+                "split": split,
+                "field_path": relative.as_posix(),
+                "observation_timestamp": f"2022-08-0{index + 1}T00:00:00Z",
+                "target_timestamp": f"2022-08-0{index + 1}T00:00:00Z",
+                "center_lat": 15.0,
+                "center_lon": -50.0,
+                "basin": "NA",
+                "storm_elapsed_hours": index * 6.0,
+                "target_wind_ms": wind_ms + 2.0,
+                "target_category": category,
+                "raw_unet_max_wind_ms": wind_ms,
+                "valid_fraction": 1.0,
+            }
+        )
+    pd.DataFrame(rows).to_csv(root / split / "manifest.csv", index=False)
+
+
+def test_lightning_fit_and_checkpoint_round_trip(tmp_path: Path) -> None:
+    root = tmp_path / "cache"
+    root.mkdir()
+    (root / "cache-metadata.json").write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "single_timestep": True,
+                "unet_checkpoint": {"sha256": "synthetic"},
+            }
+        ),
+        encoding="utf-8",
+    )
+    _write_split(root, "train", "AL012020")
+    _write_split(root, "val", "EP022021")
+    _write_split(root, "test", "WP032022")
+    datamodule = UNetIntensityDataModule(root, batch_size=2, num_workers=0)
+    model = UNetIntensityCorrection(
+        field_base_channels=4,
+        field_channel_mults=(1, 2),
+        fusion_hidden_features=16,
+        metadata_hidden_features=8,
+    )
+    trainer = pl.Trainer(
+        max_epochs=1,
+        accelerator="cpu",
+        devices=1,
+        logger=False,
+        enable_checkpointing=False,
+        limit_train_batches=1,
+        limit_val_batches=1,
+        num_sanity_val_steps=0,
+    )
+    trainer.fit(model, datamodule=datamodule)
+    checkpoint = tmp_path / "intensity.ckpt"
+    trainer.save_checkpoint(checkpoint)
+    restored = UNetIntensityCorrection.load_from_checkpoint(
+        checkpoint, map_location="cpu"
+    )
+    restored.validate_data_spec(datamodule.data_spec)
+    assert restored.metadata_features == model.metadata_features

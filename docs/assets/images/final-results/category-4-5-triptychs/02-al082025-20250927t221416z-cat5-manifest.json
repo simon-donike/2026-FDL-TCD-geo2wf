@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-08-28T16:55:53.245280+00:00",
+  "image_count": 1,
+  "filter": {
+    "source": "/work/code/geo2wf/data/unet_intensity_structure_v3/val/manifest.csv",
+    "split": "val",
+    "target": "interpolated IBTrACS USA_WIND",
+    "categories": [
+      4,
+      5
+    ],
+    "category_counts": {
+      "4": 0,
+      "5": 1
+    },
+    "storm_count": 1,
+    "ocean_only": true,
+    "land_criterion": "interpolated IBTrACS storm center classified by global_land_mask",
+    "land_occurrences_excluded": 0,
+    "eligible_occurrences": 25,
+    "selection": "all",
+    "selection_limit": null
+  },
+  "panels": [
+    "geostationary C13",
+    "SAR observed 10 m wind field",
+    "selected-model 10 m wind-field prediction"
+  ],
+  "rendering": {
+    "wind_range_mode": "actual",
+    "fixed_wind_display_range_ms": null,
+    "show_super_header": false,
+    "font_scale": 2.0,
+    "compact_headers": true
+  },
+  "model": {
+    "name": "Latent MLP \u00b7 SAR \u00b7 ERA5 \u00b7 wind + radii",
+    "selection_basis": "lowest current all-validation wind-field L1",
+    "validation_l1_ms": 2.4017400469868218,
+    "config": "/work/code/geo2wf/logs/latent-matrix/sar/era5/max-wind-radii/20260827-190834_modular/resolved-config.yaml",
+    "checkpoint": "/work/code/geo2wf/logs/latent-matrix/sar/era5/max-wind-radii/20260827-190834_modular/checkpoints/epoch=104-step=14910.ckpt"
+  },
+  "images": [
+    {
+      "sequence": 2,
+      "file": "02-al082025-20250927t221416z-cat5.png",
+      "sample_id": "AL082025_sar_geo_20250927221416_59358115",
+      "storm_id": "AL082025",
+      "observation_timestamp": "2025-09-27T22:14:16+00:00",
+      "ibtracs_target_wind_ms": 72.02216339111328,
+      "ibtracs_category": 5,
+      "wind_display_range_ms": [
+        6.4441328048706055,
+        68.66000366210938
+      ],
+      "valid_sar_pixel_mae_ms": 2.0147764682769775
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "exported_files": 201,
+  "byte_identical_to_original_inputs": true,
+  "observations": 964,
+  "sar_overlays": 27,
+  "pmw_overlays": 60,
+  "forecasts": 3284,
+  "storms": 3,
+  "fresh_storm_inference": {
+    "observations_per_storm": 1,
+    "regimes": [
+      "with-era5",
+      "without-era5"
+    ]
+  },
+  "website_deployed": false,
+  "r2_uploaded": false
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "dataset_root": "artifacts/upload/data",
+  "model_root": "artifacts/upload/models",
+  "assets": 18940,
+  "asset_bytes": 32884973800,
+  "samples": 96109,
+  "observations": 14471,
+  "source_cohorts": 22,
+  "checkpoint_count": 21,
+  "checkpoint_bytes": 1268706234,
+  "formats": {
+    "tif": 10349,
+    "npz": 3862,
+    "nc": 3718,
+    "pt": 964,
+    "csv": 34,
+    "json": 12,
+    "ipynb": 1
+  },
+  "profile_bytes": {
+    "paper-eval": 2843078692,
+    "train": 7746649545,
+    "storms": 25572389136
+  },
+  "dataset_release_sha256": "756c31e25207e0200a2c9e1fa7ae5d1335390f7303f05bf9fc46c04c23334dbb",
+  "publication_status": "local staging only; no uploads performed"
+}

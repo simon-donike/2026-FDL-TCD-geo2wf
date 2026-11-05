@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "holdout_start": "2025-10-02T00:00:00Z",
+  "holdout_end_exclusive": "2026-10-03T00:00:00Z",
+  "storm_ids": [
+    "AL012026",
+    "AL022026",
+    "AL032026",
+    "AL042026",
+    "AL052026",
+    "AL062026",
+    "AL072026",
+    "AL082026",
+    "AL132025",
+    "CP012026",
+    "CP022026",
+    "EP012026",
+    "EP022026",
+    "EP032026",
+    "EP042026",
+    "EP052026",
+    "EP062026",
+    "EP072026",
+    "EP082026",
+    "EP092026",
+    "EP102026",
+    "EP112026",
+    "EP122026",
+    "EP132026",
+    "EP142026",
+    "EP152026",
+    "EP162026",
+    "EP172026",
+    "EP182025",
+    "EP182026",
+    "EP192026"
+  ],
+  "source": {
+    "snapshot": "var/stormsense-migration/backups/before-hourly-20261022T144532Z.sqlite",
+    "sha256": "ae99d4a6380b91d77392082b36bbe649fd90d1400c7b7c15d23b5fd168e9ee57",
+    "selection": "Storm IDs with a best-track fix in the holdout interval; frozen during scientific extraction."
+  }
+}
