@@ -4,6 +4,8 @@ This repository contains the scientific source for geo2wf: data contracts and
 loaders, wind-field and intensity models, training, evaluation, and the
 reproduction workflows behind the published results. Website, dashboard, and
 operational serving code stay in the companion application repository.
+The original `geo2wf` repository is unchanged; this is an independent scientific
+copy prepared for handoff.
 
 The package distribution remains named `geo2wf` and is version `0.2.0`. The
 canonical import path is `src/geo2wf`; reproducible workflows are collected

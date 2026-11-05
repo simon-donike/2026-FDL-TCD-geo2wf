@@ -754,12 +754,17 @@
   "compatibility": [
     "geo2wf model module names retained for existing checkpoints",
     "scientific script wrappers preserve original command paths",
-    "root configs symlink points to packaged scientific configs",
-    "server consumes a versioned scientific wheel without a sibling checkout"
+    "root configs symlink points to packaged scientific configs"
   ],
   "validation_limits": [
     "Scientific unit/integration tests include synthetic CPU training and checkpoint round trips.",
     "Data-free publication tables and saved-output figures are verified separately.",
     "Full checkpoint reevaluation and retraining require externally stored data and checkpoints."
-  ]
+  ],
+  "extraction_mode": "Independent copy of scientific code and reproducibility assets; the original repository remains unchanged.",
+  "original_repository_state": {
+    "commit": "4759bd0d5bd5915730ee64676c3f27e510f3ed0e",
+    "matches_origin_main": true,
+    "working_tree": "clean"
+  }
 }
