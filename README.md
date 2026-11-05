@@ -1,74 +1,121 @@
-# geo2wf scientific workflows
+# geo2wf
 
-This repository contains the scientific source for geo2wf: data contracts and
-loaders, wind-field and intensity models, training, evaluation, and the
-reproduction workflows behind the published results. Website, dashboard, and
-operational serving code stay in the companion application repository.
-The original `geo2wf` repository is unchanged; this is an independent scientific
-copy prepared for handoff.
+Reconstruct tropical-cyclone surface wind fields and estimate maximum sustained
+wind and wind radii from geostationary satellite imagery. geo2wf contains the
+data loaders, PyTorch models, training and evaluation workflows for *Nowcasting
+of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery*,
+with results showcased in the StormSense application.
 
-The package distribution remains named `geo2wf` and is version `0.2.0`. The
-canonical import path is `src/geo2wf`; reproducible workflows are collected
-under `src/geo2wf/workflows` and exposed through small script wrappers in
-`scripts/`. Scientific assets and checkpoints are downloaded separately. The extraction inventory
-and source fingerprints are recorded in [`release/extraction.json`](release/extraction.json).
+[Documentation](https://tcd.hyperalis.com/) ·
+[Dataset on Hugging Face](https://huggingface.co/datasets/simon-donike/geo2wf-data) ·
+[Models on Hugging Face](https://huggingface.co/simon-donike/geo2wf-models) ·
+[Model guide](docs/models/index.md) ·
+[StormSense](https://stormsense.hyperalislabs.com/)
 
-## Install
+Field U-Nets learn from sparse SAR wind retrievals; joint models also predict
+intensity and radii through a shared encoder and latent MLP. ERA5 is optional
+context, and SAR is supervision rather than an inference input. A separate
+scalar model predicts six-hour intensity change, with a recursive twelve-hour
+forecast.
 
-Python 3.10 or 3.11 is supported:
+## Explore StormSense
 
-```bash
-uv sync --frozen --group dev --group docs
-```
+[StormSense](https://stormsense.hyperalislabs.com/) shows active and archived
+NHC/CPHC storms in the Atlantic, eastern Pacific, and central Pacific. Explore
+tracks, satellite imagery, hourly GEO-only intensity and wind-radius estimates,
+and official reference winds. Historical hindcasts and estimates generated
+during live updates are labeled separately. These are research estimates;
+official guidance remains with NHC/CPHC.
 
-CPU and CUDA PyTorch extras are preserved:
+[![Nolo's track and GeoColor cyclone image in StormSense](docs/assets/images/stormsense-nolo-track.png)](https://stormsense.hyperalislabs.com/storms/EP152026?time=2026-09-28T20%3A00%3A00Z)
 
-```bash
-uv sync --extra cpu
-uv sync --extra cuda
-```
+*Nolo on 28 September 2026 at 20:00 UTC: storm track, satellite image,
+and model wind-radius rings.*
 
-The source distribution includes package configuration and the pinned
-`geo2wf.inference/models.json` catalog. Select immutable data and model IDs
-from `release/registry.json` and [`docs/data/huggingface.md`](docs/data/huggingface.md).
+[![StormSense intensity predictions and NHC/CPHC reference winds for Nolo](docs/assets/images/stormsense-nolo-predictions.png)](https://stormsense.hyperalislabs.com/storms/EP152026?time=2026-09-28T20%3A00%3A00Z)
 
-Download the pinned release metadata first:
+*Nolo's intensity through time, including rapid-intensification periods.
+The chart shows observation-time estimates; smoothing is a display option.*
 
-```bash
-uv run python scripts/download_artifacts.py metadata
-uv run python scripts/download_artifacts.py all --dry-run
-```
+See the [viewer guide](docs/explorer.md) for interpretation and the
+[application guide](https://github.com/simon-donike/geo2wf/blob/main/apps/stormsense/README.md) for running the app and pipeline.
 
-## Reproduce the published results
+## Get started
 
-The release preserves the architecture and latent supervision tables, cohorts,
-full precision reports, resolved configurations, and checkpoint provenance.
-Start with [`docs/reproduction.md`](docs/reproduction.md):
-
-```bash
-uv run geo2wf-evaluate conference verify --artifact-root /path/to/artifacts
-uv run geo2wf-evaluate conference smoke --artifact-root /path/to/artifacts
-uv run geo2wf-evaluate conference tables
-uv run geo2wf-evaluate conference figures
-```
-
-For reevaluation, provide pinned data and checkpoint roots:
+Use Python 3.10 or 3.11:
 
 ```bash
-uv run geo2wf-evaluate conference evaluate-architecture \
-  --artifact-root /path/to/artifacts --data-root /path/to/data \
-  --era5 with-era5 --output build/paper-results
+uv sync --frozen
 ```
 
-The paper tables retain their original cohorts. The architecture table uses
-212 test observations from 38 storms; the latent table uses each run's
-configured validation cohort. [`docs/data/published-cohorts.md`](docs/data/published-cohorts.md)
-records published split memberships and counts.
+For the application repository's complete container workflow (CPU/GPU training,
+inference, data downloads, website hosting and deployment), see the
+[Docker guide](https://github.com/simon-donike/geo2wf/blob/main/apps/stormsense/runner/DOCKER.md).
 
-## Train and evaluate
+## Download data and models
 
-For a new experiment, use a local processed GEO/SAR export and an explicit
-configuration:
+Both releases are public on Hugging Face; no login is required. The
+[dataset](https://huggingface.co/datasets/simon-donike/geo2wf-data) contains
+about **32.9 GB of scientific assets**, plus catalogs and reference results.
+The [model release](https://huggingface.co/simon-donike/geo2wf-models) includes
+**21 checkpoints (1.27 GB)**, configurations, provenance, and matching source code.
+These binaries are stored separately from Git.
+
+From this repository's root, install the download CLI and start with metadata:
+
+```bash
+uv tool install huggingface_hub
+uv run python scripts/download_artifacts.py                 # Small metadata download
+uv run python scripts/download_artifacts.py all --dry-run   # Preview full download sizes
+uv run python scripts/download_artifacts.py all             # Download data and models
+```
+
+Use `data` or `models` instead of `all` to download only one release. Files go
+to `downloads/data/` and `downloads/models/`; change the parent with
+`--output-dir /path/to/storage`. Rerun the same command after an interruption;
+the Hub client reuses completed downloads. The script pins matching immutable
+data/model commits.
+
+## Reproducibility
+
+Use the pinned data/model revisions with each checkpoint's original
+configuration, normalization statistics, and cohort membership. The matching
+released source archive is also available at
+`downloads/models/code/conference-source.tar.gz`.
+This repository includes catalog loaders and reproduction scripts; the
+[reproduction guide](docs/reproduction.md) and
+[download guide](docs/data/index.md#use-the-downloads) give the commands.
+The [checkpoint registry](release/registry.json) records the exact models,
+configurations, cohorts, and provenance. The paper's architecture test and
+latent-ablation validation cohorts differ.
+
+## Use a trained model
+
+Run wind-field inference with a checkpoint and its matching configuration:
+
+```bash
+uv run geo2wf-infer deterministic-residual \
+  --config /path/to/resolved-config.yaml \
+  --checkpoint /path/to/model.ckpt \
+  --stats /path/to/paired/stats.json \
+  --data-root /path/to/source-archive \
+  --manifest /path/to/observation_manifest.csv \
+  --reference-root /path/to/reference-series \
+  --ibtracs-file /path/to/ibtracs.ALL.list.v04r01.csv \
+  --output-root inference/my-run
+```
+
+See the [command reference](docs/reference/commands.md) for required data inputs
+and workflow-specific help. Scalar intensity correction and forecasting
+are available through `geo2wf-infer intensity-correction` and
+`geo2wf-infer intensity-forecast`.
+
+## Train on your data
+
+These commands use the current checkout and expect a
+[local raster export](docs/data/dataset-contract.md), with split manifests and
+the referenced rasters. The downloaded Hub catalog uses the
+[catalog workflow](docs/data/huggingface.md).
 
 ```bash
 WANDB_DISABLED=true uv run geo2wf-train \
@@ -78,37 +125,25 @@ WANDB_DISABLED=true uv run geo2wf-train \
   data.stats_file=/path/to/geo_sar/stats.json
 ```
 
-The complete configuration and data contracts are documented in
-[`docs/experiments/training.md`](docs/experiments/training.md) and
-[`docs/data/dataset-contract.md`](docs/data/dataset-contract.md). Use the
-catalog loader for portable published assets:
+The [first experiment](docs/getting-started/first-experiment.md) walks through
+loading a batch and running a small training job. [Model presets](docs/models/index.md#training-presets)
+cover field U-Nets, joint field/intensity models, and scalar heads.
 
-```python
-from geo2wf.data.catalog import ScientificCatalog
+## Repository
 
-catalog = ScientificCatalog("artifacts/data", offline=True)
-samples = catalog.table("samples")       # metadata only; no pixel download
-print(samples.head())
-# Materialize a legacy train/validation/test view only after prefetching a cohort:
-# view = catalog.dataset_root("architecture-with-era5-unet", "build/example")
+```text
+src/geo2wf/       data loaders, models, training, inference, and metrics
+configs/         data and model presets
+scripts/         data preparation, inference, evaluation, and reproduction workflows
+release/         checkpoint registry, publication tables, and provenance
+docs/            usage guides, model descriptions, paper results, and legacy assets
+tests/           data, model, and integration checks
 ```
 
-Run data-free checks locally with:
+For development:
 
 ```bash
+uv sync --frozen --group dev --group docs
 uv run python -m pytest
+uv run geo2wf-evaluate conference tables
 ```
-
-## Provenance and handoff
-
-This extraction was made from parent revision
-`4759bd0d5bd5915730ee64676c3f27e510f3ed0e` and incorporates the conference
-release at `d8b01875f4ba6de6aeddae67aaa6882aa5c0ebb7`. The
-conference checkout contained uncommitted scientific documentation, catalog,
-release-hosting, and validation work; those files are included here as the
-handoff state. `release/` records the registry, validation, provenance
-snapshots, publication tables, and hosting metadata. Historical material under
-`archived/` is retained as clearly noncanonical reference code.
-
-The upstream checkout did not contain a license file; this extraction preserves
-that state.
